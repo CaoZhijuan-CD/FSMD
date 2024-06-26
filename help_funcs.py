@@ -132,7 +132,7 @@ class unetConv2(nn.Module):
         x = self.bn2(x)
         output = self.activation(x + identity)
         return output
-# ----------全局感知模块
+# ----------变化感知模块
 class CAM_layers(nn.Module):
     def __init__(self, cfg, in_channels=3, batch_norm=False, dilation=False):
         super(CAM_layers, self).__init__()
